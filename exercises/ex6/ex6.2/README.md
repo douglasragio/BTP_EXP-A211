@@ -33,7 +33,7 @@ In this exercise, you will extend a SAP CAP application by adding SAP HANA Cloud
             "plugin_name": "com.sap.hana.di.calculationview"
         }
     }
-}using { API_BUSINESS_PARTNER } from '../srv/external/API_BUSINESS_PARTNER';
+}
 ```   
    
 
