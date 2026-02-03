@@ -56,7 +56,7 @@ BEGIN
         GROUP BY R.ID, R.title, R.impact, R.criticality;
 END
 ```
-Create file /db/src/.hdiconfig and paste this code
+Create file /db/src/procedure/.hdiconfig and paste this code
 ``` 
 {
     "file_suffixes": {
