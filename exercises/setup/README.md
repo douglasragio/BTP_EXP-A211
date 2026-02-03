@@ -32,7 +32,7 @@ In this section, you successfully:
 
   1. Accessed your dedicated workspace using the provided URL, username, and password
 
-  2. Logged into the <a href="https://sap-build-eu10-trial-4-ykabxtjj.eu10.build.cloud.sap/lobby" target="_blank">SAP Build Lobby</a>
+  2. Logged into the <a href="https://sap-btp-experience-2026-shared-sb-x94grxn8.us10.build.cloud.sap/lobby" target="_blank">SAP Build Lobby</a>
 
 You are now set up and ready to begin the hands-on development exercise.
 
