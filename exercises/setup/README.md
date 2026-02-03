@@ -4,7 +4,7 @@ In this exercise, Please follow the instructions below to log into your SAP Buil
 
 ## Log in to SAP Build Code Lobby 🔐
 
-1. Go to <a href="https://sap-build-eu10-trial-4-ykabxtjj.eu10.build.cloud.sap/lobby" target="_blank">SAP Build Lobby</a>
+1. Go to <a href="[https://sap-build-eu10-trial-4-ykabxtjj.eu10.build.cloud.sap/lobby](https://sap-btp-experience-2026-shared-sb-x94grxn8.us10.build.cloud.sap/lobby)" target="_blank">SAP Build Lobby</a>
 
 - This link will then open a login page.
 
