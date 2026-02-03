@@ -56,7 +56,16 @@ BEGIN
         GROUP BY R.ID, R.title, R.impact, R.criticality;
 END
 ```
-
+Create file /db/src/.hdiconfig and paste this code
+``` 
+{
+    "file_suffixes": {
+        "hdbprocedure": {
+            "plugin_name": "com.sap.hana.di.procedure"
+        }
+    }
+}
+```  
 
 3. Deploy the to the database again using the SAP HANA Projects view.
 
