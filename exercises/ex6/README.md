@@ -17,6 +17,7 @@ and bind that container to our project and deploy the project to SAP HANA Cloud.
 <br>![](/exercises/ex6/images/3_gensso.png)
 
 4.  This will open a new browser tab, enter __academy platform__ and click on __Sign in with alternative provider__
+   ahig3ghv4-platform
 <br>![](/exercises/ex6/images/4_enterap.png)
 - __Copy__ the passcode by clicking on the icon.
 <br>![](/exercises/ex6/images/5_copyicon.png)
