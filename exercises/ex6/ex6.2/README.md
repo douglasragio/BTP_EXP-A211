@@ -25,7 +25,7 @@ In this exercise, you will extend a SAP CAP application by adding SAP HANA Cloud
 
 <br>![](/exercises/ex6/ex6.2/images/28_cvfolder.png) 
 
-4. Create file /db/src/.hdiconfig and paste this code
+4. Create file /db/src/calculationview/.hdiconfig and paste this code
 ``` 
 {
     "file_suffixes": {
