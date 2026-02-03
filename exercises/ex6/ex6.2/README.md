@@ -25,19 +25,22 @@ In this exercise, you will extend a SAP CAP application by adding SAP HANA Cloud
 
 <br>![](/exercises/ex6/ex6.2/images/28_cvfolder.png) 
 
-4. Click on the __V_RISKS.hdbcalculationview__ to load the graphical calculation view editor.
+4. Create file /db/src/.hdiconfig
+   
+
+5. Click on the __V_RISKS.hdbcalculationview__ to load the graphical calculation view editor.
 
 <br>![](/exercises/ex6/ex6.2/images/5_viewcv.png) 
 
-5. Now lets model the join relationship. Drop a join node into the modeling space.Click on the join and drop it at the end of the projection.
+6. Now lets model the join relationship. Drop a join node into the modeling space.Click on the join and drop it at the end of the projection.
 
 <br>![](/exercises/ex6/ex6.2/images/6_dropjoin.png) 
 
-6. Use the __'+'__ sign sign to add tables to the node. On clicking, it will open a new dialog box to add the data source.
+7. Use the __'+'__ sign sign to add tables to the node. On clicking, it will open a new dialog box to add the data source.
 
 <br>![](/exercises/ex6/ex6.2/images/7_addds.png) 
 
-7. Type in RISK and then select the table you created earlier via CDS called __RISK_MANAGEMENT_U00_RISKS__ 
+8. Type in RISK and then select the table you created earlier via CDS called __RISK_MANAGEMENT_U00_RISKS__ 
 
 <br>![](/exercises/ex6/ex6.2/images/28_addrisk.png) 
 
@@ -49,21 +52,21 @@ In this exercise, you will extend a SAP CAP application by adding SAP HANA Cloud
 
 <br>![](/exercises/ex6/ex6.2/images/8_addtables.png) 
 
-8. You should see both artifacts in the join node.
+9. You should see both artifacts in the join node.
 
 <br>![](/exercises/ex6/ex6.2/images/9_artifacts.png) 
 
-9. Double-click on the join node. A panel will open on the right.
+10. Double-click on the join node. A panel will open on the right.
 
 >__ℹ️ NOTE:__ The two tables might not be visible initially. Please check your zoom level and try moving your cursor to locate them.
 
 <br>![](/exercises/ex6/ex6.2/images/10_joinpanel.png) 
 
-10. Drag and drop the ID field of the RISK to the RISK_ID field of the MITIGATIONS ( RISK_MANAGEMENT_U<##>_MITIGATIONS) field and Set the cardinality to 1..n.
+11. Drag and drop the ID field of the RISK to the RISK_ID field of the MITIGATIONS ( RISK_MANAGEMENT_U<##>_MITIGATIONS) field and Set the cardinality to 1..n.
 
 <br>![](/exercises/ex6/ex6.2/images/11_setcard.png) 
 
-11. In the Mapping tab, add the output columns as shown below by dragging them from the left panel to the right. You can select and drag multiple columns at once to speed up the process.
+12. In the Mapping tab, add the output columns as shown below by dragging them from the left panel to the right. You can select and drag multiple columns at once to speed up the process.
 
 - Add the following columns: 
 
@@ -89,26 +92,26 @@ In this exercise, you will extend a SAP CAP application by adding SAP HANA Cloud
 
 <br>![](/exercises/ex6/ex6.2/images/12_mapping.png) 
 
-12. Connect the join node with the Projection node using ↗️
+13. Connect the join node with the Projection node using ↗️
 
 <br>![](/exercises/ex6/ex6.2/images/14_arrow.png) 
 <br>![](/exercises/ex6/ex6.2/images/15_connect.png) 
 
-13. Click on the Projection node and double-click on the _Join_1_ parent to add all the columns to the output.
+14. Click on the Projection node and double-click on the _Join_1_ parent to add all the columns to the output.
 
 <br>![](/exercises/ex6/ex6.2/images/16_joinmap.png) 
 
 
-14. From the SAP HANA Projects view, press the Deploy button & Check the deployment log to make sure everything was successfully created in the database.
+15. From the SAP HANA Projects view, press the Deploy button & Check the deployment log to make sure everything was successfully created in the database.
 
 <br>![](/exercises/ex6/ex6.2/images/17_deploy.png) 
 <br>![](/exercises/ex6/ex6.2/images/18_deploylogs.png) 
 
-15. Open the HDI Container in the Database Explorer. Choose your assigned user.
+16. Open the HDI Container in the Database Explorer. Choose your assigned user.
 
 <br>![](/exercises/ex6/ex6.2/images/19_openhdi.png) 
 
-16. Under Column Views you will find your Calculation View. Choose __Open Data__.
+17. Under Column Views you will find your Calculation View. Choose __Open Data__.
 
 <br>![](/exercises/ex6/ex6.2/images/20_opendata.png) 
 
@@ -116,13 +119,13 @@ In this exercise, you will extend a SAP CAP application by adding SAP HANA Cloud
 
 We now want to expose our Calculation View to the Cloud Application Programming model by creating a “proxy” entity for the view in the CDS data model.
 
-17. Return to the project and open _'_schema.cds_'_.
+18. Return to the project and open _'_schema.cds_'_.
 
 <br>![](/exercises/ex6/ex6.2/images/21_schemadef.png) 
 
-18. We need to add a matching entity definition for the Calculation View. This means redefining all the column names and data types / lengths. Doing so manually would be error prone, but the '__hana-cli__' has a utility that will help. Open a new terminal. 
+19. We need to add a matching entity definition for the Calculation View. This means redefining all the column names and data types / lengths. Doing so manually would be error prone, but the '__hana-cli__' has a utility that will help. Open a new terminal. 
 
-19. We need our proxy entity to be created without the namespace in our current _schema.cds_. Therefore comment out the namespace line and add all the existing content except the __using ...__ line in a new context for __Risk_Management_U00__
+20. We need our proxy entity to be created without the namespace in our current _schema.cds_. Therefore comment out the namespace line and add all the existing content except the __using ...__ line in a new context for __Risk_Management_U00__
 
 <br>![](/exercises/ex6/ex6.2/images/31_modifyCV.png) 
 
@@ -149,7 +152,7 @@ hana-cli inspectView -v V_RISKS -o cds
 cd ..
 ```
 
-20. Copy this block from the terminal and paste it into the _schema.cds_ file at the end outside the context block.
+21. Copy this block from the terminal and paste it into the _schema.cds_ file at the end outside the context block.
 
 <br>![](/exercises/ex6/ex6.2/images/23_copy.png) 
 
@@ -211,7 +214,7 @@ key     TITLE: String(100)  @title: 'TITLE: TITLE' ;
 
 >💡 __Insight corner__: CDS does have an annotation called @cds.persistence.exists. This annotation allows you to re-define an existing DB object and CDS won’t attempt to create or alter it. It will just assume it already exists in the matching state.There is also the annotation @cds.persistence.calcview. This will further tell the Cloud Application Programming Model that this target entity is also a Calculation View.
 
-21. Now open the service.cds file from the /srv folder. Add this new Calculation View based entity to the CAP service as read-only.
+22. Now open the service.cds file from the /srv folder. Add this new Calculation View based entity to the CAP service as read-only.
 
 ```cds
     using V_RISKS from '../db/schema.cds';
@@ -224,17 +227,17 @@ key     TITLE: String(100)  @title: 'TITLE: TITLE' ;
 
 <br>![](/exercises/ex6/ex6.2/images/24_servicemod.png) 
 
-22. From the terminal, issue the below comamnd.
+23. From the terminal, issue the below comamnd.
 ```
 cds build --production
 ```
 <br>![](/exercises/ex6/ex6.2/images/25_cdsbuild.png) 
 
-23. Although we didn’t add any new database artifacts to the project, the addition of an entity to the service layer causes new HANA SQL views to be generated within SAP HANA. Therefore we need to deploy to the database using the SAP HANA Projects view before we can test.
+24. Although we didn’t add any new database artifacts to the project, the addition of an entity to the service layer causes new HANA SQL views to be generated within SAP HANA. Therefore we need to deploy to the database using the SAP HANA Projects view before we can test.
 
 <br>![](/exercises/ex6/ex6.2/images/17_deploy.png) 
 
-24. You can now run the application by clicking on the icon as shown below:
+25. You can now run the application by clicking on the icon as shown below:
 
 <br>![](/exercises/ex6/ex6.2/images/32_run.png) 
 
