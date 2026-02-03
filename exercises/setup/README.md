@@ -18,12 +18,6 @@ Credentials will be available at the event.
 
 >where __XX__ is the two-digit number assigned to your workstation
 
->🔑 __Example__:
-If your workstation label or assigned number is 15, then your user ID will be:
-```
-User:           AC254534U15
-Password:       ObXUAzwYXV1!
-```
 3. Once you have entered the credentials, click on continue.
 <br>![](/exercises/setup/images/2_sign_in.png)
 
