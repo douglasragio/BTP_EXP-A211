@@ -25,10 +25,19 @@ In this exercise, you will extend a SAP CAP application by adding SAP HANA Cloud
 
 <br>![](/exercises/ex6/ex6.2/images/28_cvfolder.png) 
 
-4. Create file /db/src/.hdiconfig
+4. Create file /db/src/.hdiconfig and paste this code
+``` 
+{
+    "file_suffixes": {
+        "hdbcalculationview": {
+            "plugin_name": "com.sap.hana.di.calculationview"
+        }
+    }
+}using { API_BUSINESS_PARTNER } from '../srv/external/API_BUSINESS_PARTNER';
+```   
    
 
-5. Click on the __V_RISKS.hdbcalculationview__ to load the graphical calculation view editor.
+6. Click on the __V_RISKS.hdbcalculationview__ to load the graphical calculation view editor.
 
 <br>![](/exercises/ex6/ex6.2/images/5_viewcv.png) 
 
