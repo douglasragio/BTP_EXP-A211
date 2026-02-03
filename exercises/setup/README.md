@@ -10,11 +10,10 @@ In this exercise, Please follow the instructions below to log into your SAP Buil
 
 <br>![](/exercises/setup/images/1_signin.png)
 
-2. Enter the credentials, Each participant has been assigned a unique user ID for this hands-on session. 
+2. Enter the credentials, Each participant has been assigned a unique user ID for this hands-on session.
 
 ```
-User:           AC254534UXX
-Password:       ObXUAzwYXV1!
+Credentials will be available at the event.
 ```
 
 >where __XX__ is the two-digit number assigned to your workstation
