@@ -36,4 +36,9 @@ In this section, you successfully:
 
 You are now set up and ready to begin the hands-on development exercise.
 
+For reference 
+<a href="https://emea.cockpit.btp.cloud.sap/cockpit/?idp=ahig3ghv4.accounts.ondemand.com#/globalaccount/CA50235469TID000000000741455808/subaccount/9dd54f49-c102-49a0-86de-389bc6100f91/service-instances" target="_blank">SAP BTP Cockpit</a>
+
+
+
 Continue to - [ Dev Space Configurations](../dev-space-config/README.md)
