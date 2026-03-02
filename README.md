@@ -25,7 +25,6 @@ Navigate to the links below to get a detailed description to perform each exerci
     -  [Exercise 6.1 - Run your application  ](exercises/ex6/ex6.1/)
     - [Exercise 6.2 - Add SAP HANA Cloud Native Artifacts to a CAP Application](exercises/ex6/ex6.2/)
     - [Exercise 6.3 - Building and Integrating a HANA Stored Procedure into a CAP Service ](exercises/ex6/ex6.3/)
-     - [Exercise 6.4 - Accessing Cold Data for Risk Management: Historical Audit via Data Lake ](exercises/ex6/ex6.4/)
 
 🚀 Start [here](exercises/walkthrough/)
 
