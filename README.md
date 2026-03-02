@@ -2,7 +2,7 @@
 
 ## Description 📜
 
-This repository contains the material for the SAP TechEd 2025 session called DA262 - Enabling clean core development with SAP HANA Cloud and SAP Build Code.
+This repository contains the material for the SAP TechEd 2025 session called A211 - Enabling clean core development with SAP HANA Cloud and SAP Build Code.
 
 ## Overview 📚
 
