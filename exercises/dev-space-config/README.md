@@ -2,7 +2,7 @@
 
 1. The starting point for this tutorial is the lobby of SAP Build, the central entry point for all SAP Build products.
 
-  - Launch the cockpit <a href="" target="_blank> SAP BTP Cockpit</a>
+  - Launch the cockpit <a href="https://emea.cockpit.btp.cloud.sap/cockpit/?idp=ahig3ghv4.accounts.ondemand.com#/globalaccount/CA50235469TID000000000741455808/subaccount/9dd54f49-c102-49a0-86de-389bc6100f91/subaccountoverview&//detail/19712c1d-d001-4bb5-85bf-823201b5021c/?layout=TwoColumnsMidExpanded" target="_blank">SAP BTP Cockpit</a>
   - After login launch <a href="https://sap-build-eu10-trial-1-8l00vpnn.eu10.build.cloud.sap/lobby" target="_blank">SAP Build Lobby</a>🚀
 
 <br>![](/exercises/dev-space-config/images/1-launch-sap-build.png)
